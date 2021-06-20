@@ -1,0 +1,49 @@
+{ "cloud": true,
+  "pages": [
+    "pages/one/one",
+    "pages/index/index",
+    "pages/addproblem/addproblem",
+    "pages/addpicture/addpicture",
+    "pages/usermanage/usermanage",
+    "pages/others/others"
+
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#00cc77",
+    "navigationBarTitleText": "智能垃圾分类",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/主页1.png",
+        "selectedIconPath": "/images/主页2.png"
+      },
+      {
+        "pagePath": "pages/addproblem/addproblem",
+        "text": "出题",
+        "iconPath": "/images/题库1.png",
+        "selectedIconPath": "/images/题库2.png"
+      },
+
+      {
+        "pagePath": "pages/addpicture/addpicture",
+        "text": "矫正图片",
+        "iconPath": "/images/图片库1.png",
+        "selectedIconPath": "/images/图片库2.png"
+      },
+      {
+        "pagePath": "pages/usermanage/usermanage",
+        "text": "用户管理",
+        "iconPath": "/images/用户管理1.png",
+        "selectedIconPath": "/images/用户管理2.png"
+      }
+      
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

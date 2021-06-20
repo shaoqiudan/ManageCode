@@ -1,0 +1,12 @@
+/* pages/addpicture/addpicture.wxss */
+.out{padding:30rpx;box-sizing:border-box}
+.row{display: flex;height:150rpx;margin-bottom: 20rpx;}
+.pic{flex:2}
+.pic image{width: 150rpx;height:100%}
+.delete{ width:100rpx;height:50rpx;justify-content: center;font-size: 22rpx;}
+.delete .shanchu{font-size: 30rpx;color: red;}
+.edit{width:100rpx;height:50rpx;justify-content: center;font-size: 22rpx;}
+.text{flex:8;background:#ccf;padding-left: 10rpx;display: flex;flex-direction:column;justify-content: space-between;}
+.text .tite{font-size: 50rpx}
+.text .time{color:#999}
+

@@ -1,0 +1,9 @@
+<!--pages/usermanage/usermanage.wxml-->
+<scroll-view scroll-y="true" bindscrolltolower="searchScrollLower">
+  <view class="result-item" wx:for="{{dataList}}" wx:key="item">
+    <text class="title">账号：{{item.account}}</text>
+    <text class="title">登录时间：{{item.time}}</text>
+  </view>
+  <view class="loading" hidden="{{!loadMore}}">正在载入更多...</view>
+  <view class="loading" hidden="{{!loadAll}}">已加载全部</view>
+</scroll-view>

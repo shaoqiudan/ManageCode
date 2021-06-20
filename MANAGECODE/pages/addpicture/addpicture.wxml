@@ -1,0 +1,27 @@
+<!--pages/demo4/demo4.wxml-->
+<view class="out" >
+<view class="row" wx:for="{{dataList}}">
+  <view class="pic">
+    <image src="{{item.tempfilepaths}}"></image>
+  </view>
+   <view class="text">
+<!-- <view class="title">{{item.tempfilepaths}}</view> -->
+<view class="time">{{item.kind}}</view>
+<button class="delete" bindtap="deleteitem" data-id="{{item.tempfilepaths}}">
+ <!-- <text class="shanchu">删</text> -->
+delete
+   </button>
+   <button class="edit" bindtap="modalinput" data-id="{{item.tempfilepaths}}">
+     <!-- <text class="bianji">编辑</text> -->
+     edit
+   </button>
+   <modal hidden="{{hiddenmodalput}}" title="请输入垃圾名称" 
+   			confirm-text="提交" cancel-text="取消" bindcancel="modalinput" 
+   			bindconfirm="confirm" >
+     <!-- 这里可以自由选择你的输入框类型<input type='text' placeholder="请输入内容" auto-focus/> -->
+     <textarea placeholder="请输入内容" bindinput='expInput'></textarea>
+   </modal>
+  </view> 
+</view>
+</view>
+<!-- <button bindtap="nextpage">下一页</button>  -->
